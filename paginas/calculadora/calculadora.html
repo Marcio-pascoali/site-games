@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Manipulação com JS</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box-titulo">
+                <h1 id="titulo">Calculadora</h1>
+            </div>
+
+            <div class="imp-layout">
+                <input onclick="limpa()" type="number" id="n1" placeholder="Digite o Numero 1">
+                <input type="number" id="n2" placeholder="Digite o Numero 2">
+            </div>
+
+            <div class="btn1-layout">
+                <button onclick="calculo('+')">Soma</button>
+                <button onclick="calculo('-')">Subtração</button>
+            </div>
+            <div class="btn2-layout">
+                <button onclick="calculo('*')">Multiplicação</button>
+                <button onclick="calculo('/')">Divisão</button>
+            </div>
+
+            <span id="resultado">Aguardando Resultado...</span>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

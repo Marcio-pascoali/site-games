@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title> <!--Titulo da aplicação-->
+
+		<script language='Javascript'> //Iniciando javascript dentro do html
+			
+			function iniciaJogo(){  //cria função que inicia o game
+				var nivel_jogo = document.getElementById('nivel_jogo').value; //cria variavel contendo a dificuldade do game
+
+				window.location.href = 'jogo.html?'+nivel_jogo; //navega para a pagina jogo.html ()
+				
+			}
+		</script> <!--Fim do script-->
+	</head>
+
+	<body>
+		<div> <!--Div contendo a estrutura dos conteudos seletor de dificuldade e do btão play-->
+			<p>
+				<b>Nível: </b> <!--Texto da caixa seletora de dificuldade-->
+				<select id="nivel_jogo"> <!--caixa seletora de dificuldade do game-->
+					<option value="1">Fácil</option> <!--opção 1 de dificuldade-->
+					<option value="2">Normal</option> <!--opção 2 de dificuldade-->
+					<option value="3">Difícil</option> <!--opção 3 de dificuldade-->
+				</select> <!--Fechamento da tag select-->
+			</p>
+			<br />
+			<img src="imagens/iniciar.png" onclick="iniciaJogo()" /> <!--Adição do botão play com com a adição da funcinalidade onclick, chamando a função iniciajogo(), declarada no script que foi declarado no inicio do html-->
+
+	</body>
+	
+</html>

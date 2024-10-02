@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title> <!--titulo da aplicação-->
+
+		<script src="jogo.js"></script> <!--importando javascript-->
+
+	</head>
+
+	<body onload="iniciaJogo()"> <!--adicionando a função iniciajogo(), ao carregar a pagina-->
+		<div style="float:left; width:auto; height:500px; background: #FFF; border: solid 5px #A2A2A2; margin-right: 5px;"> <!--div que vai conter o numero de baloes inteiros, baloes estourados e cronometro-->
+			<table border="0"> <!--tabela que vai conter a imagem do balão inteiro e seu contador-->
+				<tr>
+					<td>
+						<img src="imagens/balao_azul_grande.png" /> <!--imagen do balão inteiro-->
+					</td>
+					<td>
+						<span id="baloes_inteiros" style="font-size: 40px;">xx</span> <!--Seu contador-->
+					</td>
+				</tr>
+			</table>
+
+			<br />
+			<table border="0"> <!--tabela que vai conter o balão extourado e seu contador-->
+				<tr>
+					<td>
+						<img src="imagens/balao_azul_grande_estourado.png" /> <!--balão extourado-->
+					</td>
+					<td>
+						<span id="baloes_estourados" style="font-size: 40px;">xx</span> <!--seu contador-->
+					</td>
+				</tr>
+			</table>
+
+			<br/>
+			<table border="0" style="width: 140px; height: 132px;"> <!--tabela que vai conter o cronometro e seu contador-->
+				<tr>
+					<td style="background: url('imagens/cronometro.png'); text-align:center"> <!--cronometro-->
+						<span id="cronometro" style="color: red; font-size: 30px;">xxx</span> <!--seu contador-->
+					</td>
+				</tr>
+			</table>
+
+		</div>
+
+		<div id="cenario" style="float: left; width: 600px; height: 500px; border: solid 5px #A2A2A2; background: url('imagens/cenario.png'); background-position: bottom;"></div> <!--Div contendo o cenario-->
+	</body>
+	
+</html>
